@@ -30,6 +30,19 @@
 	blockquote {
 		border-left:0;
 	}
+	.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 	@media (max-width: 600px) {
 		img {width:100%;}
 		body {padding:0 14px;}
@@ -101,7 +114,7 @@ The prototyping led me to the conclusion that, if the goal of a web start page (
 <p>With Spring, I innovated heavily with direct manipulation gestures. One prime example is Spring's Drag Between gesture where you connect, for example, a person to a place with a line between them and display a menu of actions that apply to the two things being connected.
 <p>
 <p>Additionally, see below for 3 other examples of interaction design challenges I solved in designing Spring.
-<blockquote>
+<blockquote class="videoWrapper">
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/VEDXw6gAoMs" frameborder="0" allowfullscreen></iframe>
 	<h4><a href="https://www.quora.com/profile/Robb-Beal/Posts/Bridging-the-Desktop-and-the-Web-Spring">Drag, Drop, Act. Seamless Product Objects via Simple Image Drags from Amazon</a></h4>
 </blockquote>
@@ -127,7 +140,7 @@ The prototyping led me to the conclusion that, if the goal of a web start page (
 <p>
 <p>I'm a Father to a perfect-in-every-way adopted 5 YO daughter, Clara and Husband to a professional executive, Tricia.
 <p>I learned the value of hard work and practice when, in college, I participated in a musical sport called Drum & Bugle Corps. Watch the video below (of Bluecoats, the Corps I marched in) for a sense of the skill and excellence needed to participate in this sport.
-<p>
+<p class="videoWrapper">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NvHfn6NlO7M?ecver=1" frameborder="0" allowfullscreen></iframe>
 <p>I've been fortunate to have traveled extensively throughout the world and those travels have helped me appreciate the importance of diversity. Countries include Turkey, China, South Africa, Croatia, Hungary, Argentina, Chile, Peru, Italy, France, Mexico, Belize, Bahamas
 <p>My eclectic interests and passions include: Kettle Bell Weight Training, Mozzarella, Reposado Tequilas, Giant Pumpkins, Residential Architecture, Interior Design
