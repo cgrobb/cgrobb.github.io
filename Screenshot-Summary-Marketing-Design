@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex">
+<style data-tag-name="beanstalk-signup" type="text/css">beanstalk-signup { display: block }</style><style data-tag-name="beanstalk-event" type="text/css">beanstalk-event { display: block }</style>
+<script type="text/javascript" data-turbolinks-eval="false">var Timing = { times: {}, mark: function(e, t) { Timing.times[e] = t || new Date().getTime() } }; Timing.mark("firstbyte")</script>
+
+<meta charset="utf-8">
+
+<script>
+//<![CDATA[
+(function(style) {
+  style.innerText = ".loading__hide { opacity: 0 }";
+  document.head.appendChild(style);
+  addEventListener("DOMContentLoaded", function() {
+    requestAnimationFrame(function() {
+      document.head.removeChild(style)
+    })
+  })
+})(document.createElement("style"))
+
+//]]>
+</script>
+
+<link rel="dns-prefetch" href="https://3.basecamp-static.com/"><link rel="dns-prefetch" href="https://public.3.basecamp.com/p/chat.3.basecamp.com"><link rel="dns-prefetch" href="https://public.3.basecamp.com/p/dash.37signals.com">
+
+<link rel="stylesheet" media="all" href="Screenshot%20Summary%20of%20the%20New%20CO%20-%20Basecamp_files/fonts-a417f885fdef09696757113159107f75dfde63c6ba473a5ccd4efe.css" data-turbolinks-track="reload">
+<link rel="stylesheet" media="all" href="Screenshot%20Summary%20of%20the%20New%20CO%20-%20Basecamp_files/desktop-b0529797b9df490d7867a75157d9be9d8fa518c8a2b3197a2303.css" data-turbolinks-track="reload">
+
+  <script src="Screenshot%20Summary%20of%20the%20New%20CO%20-%20Basecamp_files/public-fd681bb74f544f401af1b34acdc5bdf0c7f47f72c6e680e78d0730.js" defer="defer" data-turbolinks-track="reload"></script>
+
+<link rel="subresource" href="https://3.basecamp-static.com/assets/rich_text-a8c436d81182d05d50d96c0a7748499c8b75d5515ea0dd9e5a3015186841966d.js" data-script="rich_text" data-turbolinks-track="reload">
+<link rel="subresource" href="https://3.basecamp-static.com/assets/billing-0cc333e796b2e15e842e560fe8c78ad4e4e47a726b840d8d425d9ee1e554fc25.js" data-script="billing" data-turbolinks-track="reload">
+<link rel="subresource" href="https://apis.google.com/js/platform.js?onload=setupGoogleSignIn" data-script="google_platform" data-turbolinks-track="reload">
+
+
+<link rel="mask-icon" href="https://3.basecamp-static.com/assets/logos/pinned-tab-icon-84ebf5abe15724f98ad84eccd4568e1a8402c656287f2ecb2f32159387351ff2.svg" color="#3cb371">
+<link rel="shortcut icon" href="https://public.3.basecamp.com/favicon.ico" type="image/png">
+
+
+
+
+
+<title data-bridge-alt="Screenshot Summary of the New CO">Screenshot Summary of the New CO – Basecamp</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="robots" content="noindex">
+
+<meta name="referrer" content="origin-when-cross-origin">
+
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="+WSF3BhN7lXgQfOwfDHBnZNzzyAsLmURiRdXivZIbLJL4AMOxEdpVKg56pMH8FfFSL8jxEdFzjE9DkCb3OSb6A==">
+
+<meta name="turbolinks-root" content="/3128980">
+
+<meta name="turbolinks-cache-control" content="cache">
+
+<meta name="cable-url" content="wss://chat.public.3.basecamp.com/3128980">
+
+<meta name="current-account-slug-path" content="/3128980">
+
+
+<meta name="current-recording-type" content="Message"><meta name="current-recording-title" content="Screenshot Summary of the New CO"><meta name="current-recording-is-docked" content="false"><meta name="current-dock-tool-title" content="Message Board">
+<meta name="google-signin-client_id" content="341981671303-g568phroodi4guli3inqb7gnsvbvqnlk.apps.googleusercontent.com">
+<meta name="google-signin-scope" content="profile email openid">
+
+
+
+</head>
+
+<body class="chromeless public">
+  
+<div class="panel panel--perma">
+    <article class="recordable">
+    <div style="font-size:13px;">
+    <p>This is a screenshot summary of the marketing communications design and related work I led at Graybar (F500). The majority of this work was completed in an intense 4-5 months of effort in 2015.
+    <p>&nbsp;
+      <div data-behavior="embeddable_attachments_enabled" class="panel panel--perma">
+        <article class="message">
+  <section>
+    <h2 class="flush--top push_half--bottom">Screenshot Summary of Marketing Comms Design and Related Design Work at Graybar (F500)</h2>
+    <p class="flush--top push_half--bottom">By <a href="https://cgrobb.github.io/" title="Intro to Robb Beal, Product Leader"><strong>Robb Beal</strong></a></p>
+
+    <div class="formatted_content">
+      <div><br><br>
+  <bc-attachment>
+        <div class="attachment__frame attachment__hideable"><div class="inline_media_width_constraint" style="width: 684px;"><div class="inline_media_height_constraint" style="padding-top: 66.66666666666666%;"><div class="inline_media_box"><img src="Screenshot-Summary-Marketing-Design/" alt="Preview"></div></div></div></div>
+
+    <span class="attachment__details">
+      <figcaption class="attachment__caption">
+          
+      TITLE HERE
+
+    
+
+      </figcaption>
+    </span>
+  </figure></bc-attachment>
+  <bc-attachment>
+        <div class="attachment__frame attachment__hideable"><div class="inline_media_width_constraint" style="width: 684px;"><div class="inline_media_height_constraint" style="padding-top: 66.66666666666666%;"><div class="inline_media_box"><img src="Screenshot-Summary-Marketing-Design/" alt="Preview"></div></div></div></div>
+
+    <span class="attachment__details">
+      <figcaption class="attachment__caption">
+          
+      TITLE HERE
+
+    
+
+      </figcaption>
+    </span>
+  </figure></bc-attachment>
+  <bc-attachment>
+        <div class="attachment__frame attachment__hideable"><div class="inline_media_width_constraint" style="width: 684px;"><div class="inline_media_height_constraint" style="padding-top: 66.66666666666666%;"><div class="inline_media_box"><img src="Screenshot-Summary-Marketing-Design/" alt="Preview"></div></div></div></div>
+
+    <span class="attachment__details">
+      <figcaption class="attachment__caption">
+          
+      TITLE HERE
+
+    
+
+      </figcaption>
+    </span>
+  </figure></bc-attachment>
+
+      </div>
+    </div>
+  </section>
+</article>
+
+      </div>
+    </article>
+  <footer class="centered push--bottom">
+    <a href="https://basecamp.com/">
+      <img class="img--sized" src="Screenshot%20Summary%20of%20the%20New%20CO%20-%20Basecamp_files/logomark-bc3-transparent-fe91e0971c68cddf8c8f250e53fb6cf29a8.png" alt="Logomark bc3 transparent" height="65" width="80">
+</a>    <p class="flush">Shared with <a class="decorated" href="https://basecamp.com/">Basecamp</a></p>
+  </footer>
+</div>
+
+
+
+</body></html>
