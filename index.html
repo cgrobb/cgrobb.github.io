@@ -14,6 +14,21 @@
 		font-size: 20px;
 		color:rgba(0,0,0,.8);
 	}
+	.star-effect {
+    		color: rgba(0, 0, 0, 0.20);
+    		font-size: 66px;
+    		display: inline-block;
+    		vertical-align: -4px;
+	}
+	.star-effect:before {
+		content: "✦";
+    		position: absolute;
+		-webkit-transform:rotate(45deg);
+      		-ms-transform:rotate(45deg);
+    		transform: rotate(45deg);
+   		color: #dfdfdf;
+    		z-index: -1;
+	}
 	.section-full-width-wrapper {
 		background-color:#f8f8f8;
 	}
@@ -170,7 +185,7 @@
 <body>
 <div style="background-color:#fffed3;text-align:center;padding:6px 0;">Redesign in Progress. Mobile Especially. Please check back in early August.</div>
 <div class="main-wrapper">
-<h1>Robb Beal <span>&#10022;</span> Product Leader</h1>
+<h1>Robb Beal <span class="star-effect">&#10022;</span> Product Leader</h1>
 <div class="main-carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "setGallerySize": false, "autoPlay": 3500 }'>
 	 <div class="carousel-cell">
     <img class="carousel-cell-image"
