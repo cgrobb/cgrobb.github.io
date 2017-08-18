@@ -80,6 +80,26 @@
     		text-align: center;
 		font-size: 54px;
 	}
+	h1.headline:before {
+	    border-top: 7px double #dfdfdf;
+	    content: "";
+	    margin: 0 auto;
+	    position: absolute;
+	    top: 38%;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    width: 95%;
+	    z-index: -1;
+	}
+	.headline-text-l {
+		background: #fff;
+    		padding-left: 20px;	
+	}
+	.headline-text-r {
+		background: #fff;
+    		padding-right: 20px;
+	}
 	h2 {
 		padding-top: 48px;
 		padding-bottom:24px;
@@ -201,6 +221,15 @@
 		body {padding:0 10px;}
 		h1 {
 			text-align:center;
+			margin-left: 24px;
+    			margin-right: 24px;
+			font-size:46px;
+		}
+		h1.headline:before {
+		    border:none;
+		    position:;
+		    width:auto;
+		    z-index:auto;
 		}
 		.star-effect {
 			display:block;
@@ -263,7 +292,7 @@
 </head>
 <body>
 <div class="main-wrapper">
-<h1>Robb Beal <span class="star-effect">&#10022;</span> Product Leader</h1>
+	<h1 class="headline"><span class="headline-text-l">Robb Beal </span> <span class="star-effect">&#10022;</span><span class="headline-text-r"> Product Leader</span></h1>
 <div class="main-carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "setGallerySize": false, "autoPlay": 4800 }'>
 	 <div class="carousel-cell">
     <img class="carousel-cell-image"
