@@ -20,7 +20,11 @@
     		font-size: 66px;
     		display: inline-block;
     		vertical-align: -5px;
-		/* animation: spin 120s linear infinite; */
+		animation: spin 180s linear infinite;
+	}
+	.img-star-effect {
+		width: 40px;
+    		margin-top: -14px;
 	}
 	@keyframes spin {
 	    from {
@@ -33,7 +37,7 @@
 		transform: rotate(360deg)
 	    }
 	}
-	.star-effect:before {
+	/*.star-effect:before {
 		content: "\2726";
     		position: absolute;
 		-webkit-transform:rotate(45deg);
@@ -43,7 +47,7 @@
 		background-color:#fff;
     		z-index: -1;
 		margin-left:1px;
-	}
+	}*/
 	.section-full-width-wrapper {
 		background-color:#f8f8f8;
 	}
@@ -328,7 +332,7 @@
 </head>
 <body>
 <div class="main-wrapper">
-	<h1 class="headline" id="headline"><span class="headline-text-l">Robb Beal </span> <span class="star-effect">&#10022;</span><span class="headline-text-r"> Product Leader</span></h1>
+	<h1 class="headline" id="headline"><span class="headline-text-l">Robb Beal </span> <span class="star-effect"><img class="img-star-effect" src="star-effect.png" /></span><span class="headline-text-r"> Product Leader</span></h1>
 <div class="main-carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "setGallerySize": false, "autoPlay": 4800 }'>
 	 <div class="carousel-cell">
     <img class="carousel-cell-image"
