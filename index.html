@@ -22,6 +22,17 @@
     		vertical-align: -5px;
 		animation: spin 120s linear infinite;
 	}
+	@keyframes spin {
+	    from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg)
+	    }
+
+	    to {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg)
+	    }
+	}
 	.star-effect:before {
 		content: "\2726";
     		position: absolute;
