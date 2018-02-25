@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//cdn.blueconic.net/stl1.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<title>Robb Beal | Product Leader</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style type="text/css">
+	/* Warning: Messy CSS Below */
+	.main-wrapper {
+  		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+		font-size: 20px;
+		color:rgba(0,0,0,.8);
+	}
+  h1 {
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 22px;
+    text-align: center;
+    font-size: 54px;
+}
+
+.headline-text-l, .headline-text-r  {
+    background: #fff;
+    padding: 0px 12px;
+}
+
+.headline-text-l:before {
+    border-top: 7px double #dfdfdf82;
+    content: "";
+    position: absolute;
+    top: 34%;
+    right: 78%;
+    width: 18%;
+    z-index: -1;
+}
+
+.headline-text-r:after {
+    border-top: 7px double #dfdfdf82;
+    content: "";
+    position: absolute;
+    top: 34%;
+    left: 78%;
+    width: 18%;
+}
+
+/* Riff Off of Infinity Code and Concept from Ana Tudor and Andrew Kirp, Respectively */
+
+.infinity {
+    display: inline-block;
+    transform: rotate(18deg);
+    font-size: .5em;
+    vertical-align: middle;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.infinity:before, .infinity:after {
+    margin: 0 -0.2375em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    transform: translate(var(--x, 0.4px), var(--y, -1px)) rotatex(1deg) rotate(90deg);
+    background: conic-gradient(#34efef, #34efa9, #34ef63, #4bef34, #91ef34, #d7ef34, #efc034, #ef7a34, #ef3434);
+    -webkit-mask: radial-gradient(transparent calc(0.525em - 1px), #000 0.525em);
+    mask: radial-gradient(transparent calc(0.525em - 1px), #000 0.525em);
+    content: '';
+    display: inline-block;
+    transform-style: preserve-3d;
+}
+
+.infinity:after {
+    transform: rotatex(-1deg) rotate(-90deg);
+    background: conic-gradient(#34efef, #34a9ef, #3463ef, #4b34ef, #9134ef, #d734ef, #ef34c0, #ef347a, #ef3434);
+}
+	/* .star-effect {
+    		color: rgba(0, 0, 0, 0.20);
+    		font-size: 66px;
+    		display: inline-block;
+    		vertical-align: -5px;
+		animation: spin 180s linear infinite;
+		background-color: white;
+    		position: relative;
+    		z-index: -1;
+	}
+	.img-star-effect {
+		width: 40px;
+    		margin-top: -14px;
+	}*/
+	/* @keyframes spin {
+	    from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg)
+	    }
+
+	    to {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg)
+	    }
+	}*/
+	.section-full-width-wrapper {
+		background-color:#f8f8f8;
+	}
+	section {
+		width:960px;
+		margin:auto;
+		clear:both;
+	}
+	section.full-width{
+		width:auto;
+		text-align: center;
+    		margin: auto 5%;
+	}
+	section.full-width.special {
+		margin: auto 10%;
+		text-align:left;
+	}
+	section.full-width.special p {
+		width:auto;
+	}
+	section.full-width.special>h2 {
+		text-align:center;
+	}
+	section.intro-section{
+		padding-top:92px;
+	}
+	.subsection-left {
+		float: left;
+		width:45%
+	}
+	.subsection-right {
+		float: right;
+		width:45%
+	}
+	.subsection-left-3, .subsection-middle-3, .subsection-right-3 {
+		width: 33%;
+		float:left;
+		padding-right:20px;
+	}
+	
+	h1,h2,h3,h4 {
+		font-weight: bold;
+	}
+	h1 {	
+		position:relative;
+    		padding-top: 0px;
+    		padding-bottom: 20px;
+    		text-align: center;
+		font-size: 54px;
+	}
+	h1.headline:before {
+	    border-top: 7px double #dfdfdf;
+	    content: "";
+	    margin: 0 auto;
+	    position: absolute;
+	    top: 38%;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    width: 95%;
+	    z-index: -1;
+	}
+	.headline-text-l {
+		background: #fff;
+    		padding-left: 20px;	
+	}
+	.headline-text-r {
+		background: #fff;
+    		padding-right: 20px;
+	}
+	h2 {
+		padding-top: 48px;
+		padding-bottom:24px;
+		margin: 0;
+	}
+	h4 {
+	 	padding-top: 8px;
+		padding-bottom:18px;
+		margin: 0;
+		color:rgba(0, 0, 0, 0.6);
+		font-size:24px;
+	}
+	/* h2:before {
+	    content: "✦";
+	    position: absolute;
+	    margin-left: -58px;
+	    margin-top: -6px;
+	    color: #d8d8d8;
+	    font-size: 42px;
+	}*/
+	p {
+    		/*width:76%;*/
+		line-height: 1.3;
+    		margin-bottom:18px;
+	}
+	p.natural {
+		text-align:left;
+		width:auto;
+	}
+	ul { overflow: hidden; }
+	img.natural {
+		width:auto;
+	}
+	img.align-right {		
+    		margin-left: 40px;
+    		margin-bottom: 20px;
+	}
+	img.align-left {
+		margin-right:40px;
+		margin-bottom:20px;
+	}
+	.videoWrapper-block {
+		width: 78%;
+    		padding: 10px 0px;
+	}
+	blockquote {
+		border-left:0;
+		font-style: italic;
+	}
+	.highlight {
+    		background-color:#ffffc1;
+	}
+	.videoWrapper {
+		position: relative;
+		padding-bottom:56.25%; /* 16:9 */
+		padding-top: 25px;
+		height: 0;
+		margin-bottom: 45px;
+		width:100%;
+	}
+	.main-carousel .videoWrapper {
+		padding-bottom:53.8%;
+		padding-top:0px;
+	}
+	.main-carousel .videoWrapper-special {
+		padding-bottom:60.2%;
+		padding-top:0px;
+	}
+	.videoWrapper iframe, .videoWrapper-special iframe  {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	/*.videoWrapper body,.html5-video-player {
+		background:none;
+	}*/
+	.main-carousel {
+  		width: 980px;
+    		height: 625px;
+    		margin: auto;
+	}
+	.carousel-cell {
+		width:100%;
+	}
+	.carousel-cell.custom-zoom {
+		text-align: center;
+	}
+	.carousel-cell.custom-zoom img.carousel-cell-image {
+		width:80%;
+	}
+	img.carousel-cell-image {
+		width:100%
+	}
+	.flickity-prev-next-button.next {
+    		right: -50px;
+	}
+	.flickity-prev-next-button.previous {
+    		left: -50px;
+	}
+	.carousel-cell-text {
+		font-size: 14px;
+		text-align: center;
+		position:absolute;
+		bottom: 6px;
+    		left: 0;
+	}
+	.carousel-cell-text a {
+		padding: 8px;
+    		background-color: #999;
+    		color: #fff;
+	}
+	.carousel-assist-text {
+		width: 100%;
+    		font-size: 11px;
+    		text-align: center;
+		margin-top: 32px;
+	}
+	@media (max-width: 600px) {
+		section {
+			width:100%;
+		}
+		img {width:100% !important;}
+		/* body {padding:0 10px;} */
+		h1 {
+			text-align:center;
+			margin-left: 24px;
+    			margin-right: 24px;
+			font-size:42px;
+		}
+		h1.headline:before {
+			border:none;
+			position:initial;
+			width:auto;
+			z-index:auto;
+		}
+		h2 {
+			text-align:center;
+		}
+		h4 {
+    			padding-left: 16px;
+    			padding-right: 16px;
+		}
+		.headline-text-l, .headline-text-r {
+			display: block;
+			padding:initial;
+		}
+		.headline-text-r {
+			display: block;
+			font-weight:normal;
+			font-size:36px;
+			margin-top:4px;
+		}
+		.star-effect {
+			display:block;
+		}
+		/*.star-effect:before {
+			margin-left: -2px;
+    			margin-top: -2px;
+		}*/
+		.img-star-effect {
+			width: 60px !important;
+		}
+		.main-carousel {
+			width: 100%;
+			height: 290px;
+		}
+		.carousel-cell-text {
+			font-size: 10px;
+			bottom: 3px;
+		}
+		.carousel-cell-text a {
+			padding: 4px;
+		}
+		.carousel-assist-text {
+			display:none;
+		}
+		p {
+			width:100%;
+			line-height: 1.3;
+			margin-bottom:18px;
+			padding: 0 16px;
+		}
+		.flickity-prev-next-button.next, .flickity-prev-next-button.previous {
+			display:none;
+		}
+		.videoWrapper-block {
+    			width: 100%;
+		}
+		.subsection-left {
+			float: none;
+			width:100%
+		}
+		.subsection-right {
+			float: none;
+			width:100%
+		}
+		img.align-left {
+			margin-right:auto;
+		}
+		img.align-right {
+			margin-left:auto;
+		}
+		.subsection-left-3, .subsection-middle-3, .subsection-right-3 {
+			width: 100%;
+			float: none;
+			padding: 12px; auto;
+		}
+		section.full-width.special {
+    			margin: auto;
+		}
+	}
+</style>
+</head>
+<body>
+<div class="main-wrapper">
+	<h1 class="headline" id="headline"><span class="headline-text-l">Robb Beal </span> <!--<span class="star-effect"><img class="img-star-effect" src="star-effect.png" /></span>--> <span class="infinity"></span><span class="headline-text-r"> Product Leader</span></h1>
+<div class="main-carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "setGallerySize": false, "autoPlay": 4800 }'>
+	 <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      src="beal-companies.png" title="Companies Robb Has Worked For" />
+  </div>
+	<div class="carousel-cell">
+    <a href="https://www.linkedin.com/today/author/robbbeal" target="_blank"><img class="carousel-cell-image"
+				    src="beal-linkedin-publishing.png" title="Robb's Product Thinking on LinkedIn" /></a>
+      <div class="carousel-cell-text"><a href="https://www.linkedin.com/today/author/robbbeal" target="_blank">Click for Addt'l Background</a></div>
+  </div>
+	<div class="carousel-cell">
+    <a href="https://cgrobb.github.io/Screenshot%20Summary%20of%20the%20New%20CO%20%E2%80%93%20Basecamp.htm#reading-levels-chart" target="_blank"><img class="carousel-cell-image"
+      src="Screenshot%20Summary%20of%20the%20New%20CO%20-%20Basecamp_files/Reading-Level-Chart.png" title="Reading Chart Social Sharing" /></a>
+		<div class="carousel-cell-text"><a href="https://cgrobb.github.io/Screenshot%20Summary%20of%20the%20New%20CO%20%E2%80%93%20Basecamp.htm#reading-levels-chart" target="_blank">Click for Addt'l Background</a></div>
+  </div>
+  
+  <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      src="graybar-cart-hero.png" title="Graybar Cart Wireframe" />
+  </div>
+  <div class="carousel-cell">
+    <a href="https://www.linkedin.com/pulse/how-works-digital-design-background-case-study-robb-beal" target="_blank"><img class="carousel-cell-image"
+															   src="graybar-fulfillment-hero.png" title="Graybar Fulfillment Options Wireframe" /></a>
+	  <div class="carousel-cell-text"><a href="https://www.linkedin.com/pulse/how-works-digital-design-background-case-study-robb-beal" target="_blank">Click for Addt'l Background</a></div>
+	  
+  </div>
+  <div class="carousel-cell">
+    <a href="http://www.allentel.com/" target="_blank"><img class="carousel-cell-image"
+					    src="allentel-vector-large.png" title="Allentel.com Redesign Home Page" /></a>
+    <div class="carousel-cell-text"><a href="http://www.allentel.com/" target="_blank">Click for Addt'l Background</a></div>
+  </div>
+<div class="carousel-cell">
+    <div class="videoWrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sY4xAlIBJaY?playlist=sY4xAlIBJaY&amp;modestbranding=1&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
+	</div>
+  </div>
+   <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      src="GB-Live-Style-Guide-TogglesOn.jpg" title="Graybar Live Style Guide Concept" /> 
+  </div>
+	<div class="carousel-cell custom-zoom">
+    <img class="carousel-cell-image"
+      src="2ndshort-gameday-summary.jpeg" title="Game Day Summary Visualization" />
+  </div>
+  <div class="carousel-cell">
+    <div class="videoWrapper-special">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/R6tzu7Io13I?modestbranding=1&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	</div>
+  </div>
+  <div class="carousel-cell custom-zoom">
+    <img class="carousel-cell-image"
+      src="moviescreen_full.jpg" title="Watson for MacOS: Movies Tool" />
+  </div>
+  <div class="carousel-cell">
+    <a href="https://www.quora.com/profile/Robb-Beal/Posts/Early-Social-Software-Spring-by-UserCreations" target="_blank"><img class="carousel-cell-image" src="spring-city-canvas.jpg" title="Spring City Canvas" /></a>
+	  <div class="carousel-cell-text"><a href="https://www.quora.com/profile/Robb-Beal/Posts/Early-Social-Software-Spring-by-UserCreations" target="_blank">Click for Addt'l Background</a></div>
+  </div>
+  <div class="carousel-cell">
+    <a href="https://www.quora.com/profile/Robb-Beal/Posts/Early-Social-Software-Spring-by-UserCreations" target="_blank"><img class="carousel-cell-image" src="spring-travel-canvas.jpg" title="Spring Travel Canvas" /></a>
+ <div class="carousel-cell-text"><a href="https://www.quora.com/profile/Robb-Beal/Posts/Early-Social-Software-Spring-by-UserCreations" target="_blank">Click for Addt'l Background</a></div>  
+  </div>
+  <div class="carousel-cell">
+    <a href="https://www.quora.com/profile/Robb-Beal/Posts/Early-Social-Software-Spring-by-UserCreations" target="_blank"><img class="carousel-cell-image" src="spring-drag-between.jpg" title="Spring Drag Between Gesture" /></a>
+	  <div class="carousel-cell-text"><a href="https://www.quora.com/profile/Robb-Beal/Posts/Early-Social-Software-Spring-by-UserCreations" target="_blank">Click for Addt'l Background</a></div>
+  </div>
+
+	<!--<img src="Screenshot%20Summary%20of%20the%20New%20CO%20-%20Basecamp_files/Reading-Level-Chart.png" title="Booksource Reading Level Chart with Facebook Sharing" width="100%">-->
+	</div>
+<div class="carousel-assist-text">Hover over slide to pause.</div>
+<section class="intro-section">
+<img class="align-right" align="right" width="34%" src="robb-clara.jpg" title="My Daughter Clara and I">
+<p>You've reached the product portfolio for Robb Beal, a Veteran, Apple Design Award-Winning Product Leader.
+<p>Welcome!
+<p>Below, I answer a variety of questions with the goal of helping you better understand me as a Product Leader. In many cases, the answers represent Case Studies of my work. This document supplements <a href="https://www.linkedin.com/in/robbbeal/" title="LinkedIn Profile Page for Robb Beal" target="_blank">my LinkedIn profile</a> and you'll find links back to LinkedIn for Case Studies that originate there.
+	</section>
+<section>
+<h2>Tell Me About Yourself</h2>
+<p>I'm a Father to a perfect-in-every-way adopted 5 YO daughter, Clara and Husband to a professional executive, Tricia.
+<p>I learned the value of hard work and practice when, in HS/college, I participated in a musical sport called Drum & Bugle Corps. Watch the video below (of Bluecoats, the Corps I marched in) for a sense of the skill and excellence demanded by this sport.
+<p class="videoWrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NvHfn6NlO7M?ecver=1" frameborder="0" allowfullscreen></iframe>
+<p>I've been fortunate to have traveled extensively throughout the world and those travels have helped me appreciate the huge importance of diversity. Countries included Turkey, China, South Africa, Croatia, Hungary, Argentina, Chile, Peru, Italy, France, Mexico, Belize, Bahamas.
+<p>My eclectic interests and passions include: Kettle Bell Weight Training, Mozzarella, Residential Architecture (e.g. <a href="https://www.skurman.com/">Andrew Skurman Architects</a>), Reposado Tequilas, Giant Pumpkins, and Interior Design (e.g. <a href="http://www.janshowers.com/">Jan Showers</a>)
+<p>&nbsp;
+	</section>
+	<div class="section-full-width-wrapper" style="min-height:630px;">
+<section class="full-width">
+<h2>Tell Me About the Time Your Work Really Moved Important Business Metrics</h2>
+<img align="left" class="align-left" width="54%" src="https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=nvDCQ1fxzu6s4SAGYxaVkbQzHyY%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta9Er0Vinkhwfjw8177yE41y87UNCVordEGXyD3u0qYrdf3LucJGJfrvyuVQfcSwclFcyePKgRTPkD5q8eYPte9l5isLld424ZxUBbFImi24" title="Teacher Dashboard Screen Shot">
+<p class="natural">At Booksource in the Summer-Fall 2016, I led the redesign of a Teacher- and Student-facing web app for managing the books in a Classroom Library. The app had seen slow-to-no growth over the past couple of years. In an incredibly short amount of time, I led a brand new team through a product development cycle that put primary emphasis on improving the UX and secondary emphasis on adding new features.
+<p class="natural"><em>The results of that small investment was a 30% YOY improvement (sustained for 6+ months) in Monthly Active Users. Additionally, by bringing key product recommendation content out onto the app's home page, pageviews for the app's E-Commerce page increased 1000%.</em>
+	<p class="natural">For a full case study and visual tour of this work, <a href="Screenshot%20Summary%20of%20the%20New%20CO%20–%20Basecamp.htm" target="_blank">see this page</a>.
+	</section>
+	</div>
+<section>
+<h2>Talk to Me About Your Product Leadership Experience and Philosophy</h2>
+<img src="level5-design-leader.png" width="50%" align="left" class="align-left">
+<p class="natural">Referring to the leadership levels framework in <a href="http://shop.oreilly.com/product/0636920044949.do" title="Org Design for Design Orgs" target="_blank">Peter Merholz and Kristin Skinner's recent book</a> (see excerpt left/above), I'm transitioning to <strong>Level 5</strong> (The Complete Product Leader), the highest level.
+
+<p class="natural">In terms of <strong>achievements</strong>, I've led teams in framing and solving hard problems (e.g. my complex fulfillment e-commerce work at F500 Graybar), and have driven multiple innovative efforts that uncovered new value with new kinds of experiences (e.g. my pioneering Social Software work with Spring at UserCreations).
+
+<p class="natural">In terms of <strong>scope</strong>, for much of my recent career, I've owned the entire product experience (e.g., the end-to-end shopping experience at F500 Graybar).</p>
+<img src="double-diamond.png" title="Double Diamond Model of Product Development" width="62%" align="right" class="align-right" />
+<p class="natural">In terms of <strong>process</strong>, I establish a philosophy/mindset for how the team approaches its work using the <a title="Double Diamond Model of Product Development" href="http://www.peterme.com/2013/09/26/the-double-diamond-model-of-product-definition-and-design/">Double Diamond process for product development</a>. For my teams, introduction to the Double Diamond process is a vital part of all new team member onboarding.							 
+<p class="natural">In terms of <strong>people</strong>, I've had career management responsibility for 20+ product folks and leadership responsibility for 100s over my career. I set clear expectations for my team members, assist them in achieving those expectations, help them get unstuck, provide them frequent feedback, and generally establish a team culture purpose-built to encourage the best work.
+<p><blockquote>"Robb is a brilliant Product/UX Director and Strategist. I've had the great benefit of being managed and mentored by him across multiple companies throughout my career." <span style="white-space: nowrap;">&mdash;Elizabeth Woods, Product Designer</span></blockquote>
+<p class="natural">In terms of <strong>cross-functional collaboration</strong>, there's a distinct split in the nature of the collaboration between the 2 diamonds: Definition/Discovery and Execution. In the earliest parts of Definition/Discovery, I'm often engaged in collaboration with Engineering/Data Science and Marketing/Growth peers to give just enough shape to a new product/service and to align business and product strategy so that it's meaningful/productive to engage our teams. In Execution, I'm assisting the team by defining/communicating clear goals, decision-making, and roles and expectations.
+	</section>
+<section>
+	<h2>Tell Me About the Product Scales at Which You Work</h2>
+<img width="50%" align="left" class="align-left" src="product-scales.png">
+<p class="natural">As shown in the diagram (see left/above), I'm contributing with peers at the Big Picture and Strategy scales, transitioning effortlessly to my team between Strategy and Structure, and supporting my teams in the lower scales.
+<p class="natural">My contributions at these scales greatly influence how a product works versus how it looks. See my <a href="https://www.linkedin.com/pulse/how-works-digital-design-background-case-study-robb-beal" target="_blank">case study from my recent F500 e-commerce work</a> for a deeper dive.
+	</section>
+<section>
+<h2>Tell Me About How You Use Metrics/Analytics/Algo's</h2>
+<img width="135" align="left" class="align-left" src="ga-ui-excerpt.png"> 
+<p class="natural">I'm a huge proponent of using <a href="https://en.wikipedia.org/wiki/OKR">OKRs</a> (Objectives and Key Results) for goal-setting and achievement.
+<p class="natural"> With a passion for stats and having immersed myself in Data Science and Machine Intelligence/Learning over the past few years, I'm very well-prepared to lead the creation of next-gen data+algorithms products.
+<p class="natural">For more depth, I've <a href="beal-data.html" title="Robb's Data/Analytics Background" target="_blank"> detailed my considerable expertise in a separate page</a>.
+	</section>
+<section>
+<h2>Tell Me About Your Perspective on Prototyping</h2>
+<p>After leading the creation of hundreds of active prototypes over thousands of hours throughout my career, it's something I feel deeply expert about. And, I consider active prototyping to be so essential to great digital product work and to the health of world-class product teams that I'd say 75% of the work I've led over the past few years involved active prototyping.
+<p>As an example, in the screencast below, I walk through prototyping I led to understand customizations being considered for a complex UI component on Product Details pages in an e-commerce storefront. (Scrub to the 6:18 mark in the screencast for an example of where we interceded with prototyping.)
+<div class="videoWrapper-block">
+	<p class="videoWrapper" style="margin-bottom:18px;">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/V49HIljZ_4g" frameborder="0" allowfullscreen></iframe>
+	</p>
+</div>
+<p>	
+For more depth, see my <a href="https://www.linkedin.com/pulse/expect-magic-prototyping-power-pairing-designers-robb-beal" title="My LinkedIn post on prototyping" target="_blank"> Expect Magic: Prototyping and the Power of Pairing Designers </a> post.
+</section>
+<section>
+
+<h2>Show Me Some Innovative Product Thinking</h2>
+<h4>Pioneering Social Software</h4>
+<img src="1.2pr.jpg" title="Spring People Places Products Screen Shot" width="50%" class="align-left" align="left">
+<p>I was the Founder and Head of Product of a start-up that did pioneering Social Software (Pre-Facebook,-Pinterest), called Spring.
+<ul><li>It was Social Software and Social Objects (People, Places, Products, Etc) before these terms were coined.</li><li>It was minimalist, content-centric UI long before that trend even began.</li><li>It dealt with how to provide personalization and sharing while respecting privacy.</li><li>There was even a Social Object standard that would remind you of the (Facebook) Open Graph protocol.</li></ul>
+<p><em>All of these thing were super-instinctual to me as I designed it.</em>
+	<p>I was blessed that Spring was <a href="http://www.nytimes.com/2003/02/27/technology/turning-the-desktop-into-a-meeting-place.html" target="_blank">featured in the NY Times</a> and won an O'Reilly Media Award for Product Innovation, my 2nd major innovation award after winning an Apple Design Award for Innovation for my work on Watson at Karelia a year earlier.											
+
+<h4>Early Conversational Experiences</h4>
+<img width="50%" src="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAh_AAAAJDQxM2Y4NzZmLTdhZjEtNDA0MC1iMzc0LTkyZTUwNTAwOTAwOA.png" title="Wireframe of a Conversational UX Prototype" align="right" class="align-right"><p>Circa 2000, I did personal prototyping of a verb-centric conversational UX that would serve as an alternative start page for web explorations. Imagine a UI in which a menu of common web actions like Buy, Sell, Trade, Rent/Lease, Subscribe, Reserve, Play, Join, Publish/Post, Contact (Email, Chat, Text, Call), Etc preceded the traditional Google search field and the choice in that menu informed all subsequent object auto-suggestions (and optionally inserted other forms of speech to make things feel more sentence-like).
+<p>The prototyping led me to the conclusion that, if the goal of a web start page (e.g., a search engine) is to ultimately get people to take actions on the sites it takes users to, actions/verbs should be higher-class UI citizens on those starting points.
+<p><a href="https://www.linkedin.com/pulse/verb-centric-conversational-ux-circa-2000-robb-beal" target="_blank">Read the Full Post on LinkedIn</a>																      
+	</section>
+
+<section>
+<h2 id="beal-user-research">Talk to Me About User Research</h2>
+<img src="dashboard-stages.gif" align="left" class="align-left" style="width: 54%;" />
+<p class="natural">Building empathy with my current and prospective customers is foundational for great product work.
+<p class="natural">To build that empathy, I'm a huge proponent of the <a href="https://blog.intercom.com/jobs-to-be-done-doubter-believer/">Jobs to Be Done framework</a> and its <a href="https://www.fastcodesign.com/3068326/a-ridiculously-simple-tool-for-building-products-people-love">Jobs Stories</a> artifact. Its focus on causality, motivations, and anxieties simply make it a better approach than traditional personas.
+<p class="natural"><blockquote>When _____, I want to be able to _____, so I can _____.</blockquote>
+<p class="natural">In the vast majority of my product work, I've led the creation of the user research plans to support a given product development project. My primary responsibility here was choosing appropriate types and sequence of research methods to use given the type of product being developed and the expected time constaints.
+
+<p class="natural">A typical user research plan included 3 distinct rounds of research in ~1 months time. The 1<sup>st</sup> round typically would use Card Sorting, Reverse Card Sorting, and other attitudinal and qualitative research approaches to tease out what's important/valuable to users. Using the learnings from that 1<sup>st</sup> round, the 2<sup>nd</sup> round testing would often use Participatory Research approaches where we have users build hypothetical pages with semi-abstract content blocks. Wireframing based on that input would then serve as the design artifact for a final round of testing/feedback.
+<p>&nbsp;
+	</section>
+<div class="section-full-width-wrapper">
+	     <!-- <section class="full-width" style="min-height: 770px;">
+<h2 class="natural">Show Me Some Novel Interaction Design Work</h2>
+<img align="right" src="https://qph.ec.quoracdn.net/main-qimg-0c6a01fbeb87acdf2f542b2dcece532a-p" title="Spring Drag Between Gesture" class="align-right">
+<p class="natural">My experience over the years has shown me how powerful the concept of direct manipulation is to modern UI. When you <a href="https://www.linkedin.com/pulse/draft-seminal-moments-how-works-digital-design-robb-beal" target="_blank">look at many of the most important and innovative UI metaphors over the past 15 years</a>, you see that more than half of those involve direct manipulation UI metaphors (Google Maps, Tableau, Trello, Etc)
+<p class="natural">With Spring, I innovated heavily with direct manipulation gestures. One prime example is Spring's Drag Between gesture where you connect, for example, a person to a place with a line between them and display a menu of actions that apply to the two things being connected.
+<p>
+<p class="natural">Additionally, see below for 3 other examples of interaction design challenges I solved in designing Spring.
+<div style="margin-top:42px;">
+<div class="subsection-left-3">
+	<p class="videoWrapper" style="margin-bottom:0px;">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/VEDXw6gAoMs" frameborder="0" allowfullscreen></iframe>
+	</p>
+	<h5><a href="https://www.quora.com/profile/Robb-Beal/Posts/Bridging-the-Desktop-and-the-Web-Spring" target="_blank">Drag, Drop, Act. Seamless Product Objects via Simple Image Drags from Amazon</a></h5>
+</div>
+	<div class="subsection-middle-3">
+	<a href="https://www.linkedin.com/pulse/folder-less-groups-social-objects-zoomable-ui-ixd-nerdery-robb-beal" target="_blank"><img src="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAY5AAAAJGYzN2MwZDY0LTg5NDUtNDMyZi1iYjkxLTE5NjBhZjE2ZmJhYw.png" title="Folderless Groups of People Places and Products" width="100%"></a>
+	<h5><a href="https://www.linkedin.com/pulse/folder-less-groups-social-objects-zoomable-ui-ixd-nerdery-robb-beal" target="_blank"">Folderless Groups of Social Objects in a Zoomable UI</a></h5>
+</div>
+<div class="subsection-right-3">
+	<a href="https://www.linkedin.com/pulse/ui-filtering-without-context-changes-ixd-nerdery-robb-beal" target="_blank"><img src="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAcZAAAAJDE0MTU5MjZkLTVkYTMtNDVhNi1hODRkLTUwNDNhOWRkYzQ3Mw.jpg" title="Filtering of People Places and Products Without Context Change" width="100%"></a>
+	<h5><a href="https://www.linkedin.com/pulse/ui-filtering-without-context-changes-ixd-nerdery-robb-beal" target="_blank">UI Filtering Without Context Changes</a></h5>
+</div>
+													       </div>
+</section> -->
+													       </div>
+													       
+<p style="text-align:center;width:100%;"><a href="#headline">Back to Top</a>
+<h1 class="headline"><span class="star-effect"><span class="star-effect">&nbsp;<img class="img-star-effect" src="star-effect.png">&nbsp; </span></span></h1>
+	</div>
+<script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+    <script type="text/javascript">
+            try{
+            var pageTracker = _gat._getTracker("UA-37927353-3");
+            pageTracker._trackPageview();
+            } catch(err) {}
+        </script>
+</body>
+</html>
