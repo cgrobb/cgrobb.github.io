@@ -15,67 +15,71 @@
 		font-size: 20px;
 		color:rgba(0,0,0,.8);
 	}
-  h1 {
-    position: relative;
-    padding-top: 0px;
-    padding-bottom: 22px;
-    text-align: center;
-    font-size: 54px;
-}
+	h1 {
+	    position: relative;
+	    padding-top: 0px;
+	    padding-bottom: 22px;
+	    text-align: center;
+	    font-size: 54px;
+	}
 
-.headline-text-l, .headline-text-r  {
-    background: #fff;
-    padding: 0px 12px;
-}
+	.headline-text-l, .headline-text-r  {
+	    background: #fff;
+	    padding: 0px 12px;
+	}
 
-.headline-text-l:before {
-    border-top: 7px double #dfdfdf82;
-    content: "";
-    position: absolute;
-    top: 34%;
-    right: 78%;
-    width: 18%;
-    z-index: -1;
-}
+	.headline-text-l:before {
+	    border-top: 7px double #dfdfdf82;
+	    content: "";
+	    position: absolute;
+	    top: 34%;
+	    right: 78%;
+	    width: 18%;
+	    z-index: -1;
+	}
 
-.headline-text-r:after {
-    border-top: 7px double #dfdfdf82;
-    content: "";
-    position: absolute;
-    top: 34%;
-    left: 78%;
-    width: 18%;
-}
+	.headline-text-r:after {
+	    border-top: 7px double #dfdfdf82;
+	    content: "";
+	    position: absolute;
+	    top: 34%;
+	    left: 78%;
+	    width: 18%;
+	}
 
-/* Riff Off of Infinity Code and Concept from Ana Tudor and Andrew Kirp, Respectively */
+	/* Riff Off of Infinity Code and Concept from Ana Tudor and Andrew Kirp, Respectively */
+	.infinity {
+	    display: inline-block;
+	    transform: rotate(18deg);
+	    font-size: .5em;
+	    vertical-align: middle;
+	    position: relative;
+	    transform-style: preserve-3d;
+	}
 
-.infinity {
-    display: inline-block;
-    transform: rotate(18deg);
-    font-size: .5em;
-    vertical-align: middle;
-    position: relative;
-    transform-style: preserve-3d;
-}
+	.infinity:before, .infinity:after {
+	    margin: 0 -0.2375em;
+	    width: 2em;
+	    height: 2em;
+	    border-radius: 50%;
+	    transform: translate(var(--x, 0.4px), var(--y, -1px)) rotatex(1deg) rotate(90deg);
+	    background: conic-gradient(#34efef, #34efa9, #34ef63, #4bef34, #91ef34, #d7ef34, #efc034, #ef7a34, #ef3434);
+	    -webkit-mask: radial-gradient(transparent calc(0.525em - 1px), #000 0.525em);
+	    mask: radial-gradient(transparent calc(0.525em - 1px), #000 0.525em);
+	    content: '';
+	    display: inline-block;
+	    transform-style: preserve-3d;
+	}
 
-.infinity:before, .infinity:after {
-    margin: 0 -0.2375em;
-    width: 2em;
-    height: 2em;
-    border-radius: 50%;
-    transform: translate(var(--x, 0.4px), var(--y, -1px)) rotatex(1deg) rotate(90deg);
-    background: conic-gradient(#34efef, #34efa9, #34ef63, #4bef34, #91ef34, #d7ef34, #efc034, #ef7a34, #ef3434);
-    -webkit-mask: radial-gradient(transparent calc(0.525em - 1px), #000 0.525em);
-    mask: radial-gradient(transparent calc(0.525em - 1px), #000 0.525em);
-    content: '';
-    display: inline-block;
-    transform-style: preserve-3d;
-}
-
-.infinity:after {
-    transform: rotatex(-1deg) rotate(-90deg);
-    background: conic-gradient(#34efef, #34a9ef, #3463ef, #4b34ef, #9134ef, #d734ef, #ef34c0, #ef347a, #ef3434);
-}
+	.infinity:after {
+	    transform: rotatex(-1deg) rotate(-90deg);
+	    background: conic-gradient(#34efef, #34a9ef, #3463ef, #4b34ef, #9134ef, #d734ef, #ef34c0, #ef347a, #ef3434);
+	}
+	.infinity-wrapper {
+	    background: #fff;
+            padding: 0 24px;
+    	    vertical-align: baseline;
+	}
 	/* .star-effect {
     		color: rgba(0, 0, 0, 0.20);
     		font-size: 66px;
@@ -152,7 +156,7 @@
 		font-size: 54px;
 	}*/
 	h1.headline:before {
-	    border-top: 7px double #dfdfdf;
+	    border-top: 7px double #dfdfdf82;
 	    content: "";
 	    margin: 0 auto;
 	    position: absolute;
