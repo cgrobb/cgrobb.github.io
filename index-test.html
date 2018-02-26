@@ -49,7 +49,10 @@
 	    z-index: -1;
 	}
 
-	/* Riff Off of Infinity Code and Concept from Ana Tudor and Andrew Kirp, Respectively */
+	/*
+	   Riff Off of Infinity Code and Concept from Ana Tudor and Andrew Kirp, Respectively.
+	   I Fixed a Bug that Caused Incorrect Rendering on Chrome Android
+	*/
 	.infinity {
 	    display: inline-block;
 	    transform: rotate(18deg);
@@ -61,22 +64,22 @@
 	}
 
 	.infinity:before, .infinity:after {
-	    margin: 0 -0.2375em;
-	    width: 2em;
-	    height: 2em;
-	    border-radius: 50%;
-	    transform: translate(var(--x, 0.4px), var(--y, -1px)) rotatex(1deg) rotate(90deg);
-	    background: conic-gradient(#34efef, #34efa9, #34ef63, #4bef34, #91ef34, #d7ef34, #efc034, #ef7a34, #ef3434);
-	    -webkit-mask: radial-gradient(transparent calc(0.525em - 1px), #000 0.525em);
-	    mask: radial-gradient(transparent calc(0.525em - 1px), #000 0.525em);
-	    content: '';
-	    display: inline-block;
-	    transform-style: preserve-3d;
+	  margin: 0 -0.2375em;
+	  width: 2em;
+	  height: 2em;
+	  border-radius: 50%;
+	  /*box-shadow: inset 0 -.375em rgba(#fff, .25); */
+	  transform: translate(var(--x, 0.4px), var(--y, -1px)) rotatex(1deg) rotate(90deg);
+	  background: radial-gradient(#fff 0.525em, transparent calc(0.525em - 1px)), conic-gradient(#34efef, #34efa9, #34ef63, #4bef34, #91ef34, #d7ef34, #efc034, #ef7a34, #ef3434);
+	  /* -webkit-mask: $m; */
+	  /* Firefox also supports WebKit-prefixed one, but whatever */
+	  /* mask: $m; */
+	  content: '';
 	}
-
 	.infinity:after {
-	    transform: rotatex(-1deg) rotate(-90deg);
-	    background: conic-gradient(#34efef, #34a9ef, #3463ef, #4b34ef, #9134ef, #d734ef, #ef34c0, #ef347a, #ef3434);
+	  transform: rotatex(-1deg) rotate(-90deg);
+	  /*&box-shadow: inset -.375em 0 rgba(#fff, .25);*/
+	  background: radial-gradient(#fff 0.525em, transparent calc(0.525em - 1px)), conic-gradient(#34efef, #34a9ef, #3463ef, #4b34ef, #9134ef, #d734ef, #ef34c0, #ef347a, #ef3434);
 	}
 	.infinity-wrapper {
 	    background: #fff;
