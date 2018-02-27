@@ -4,6 +4,7 @@
 <script src="//cdn.blueconic.net/stl1.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 <title>Robb Beal | Product Leader</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
@@ -15,7 +16,78 @@
 		font-size: 20px;
 		color:rgba(0,0,0,.8);
 	}
-	.star-effect {
+	h1 {
+	    position: relative;
+	    padding-top: 0px;
+	    padding-bottom: 22px;
+	    text-align: center;
+	    font-size: 54px;
+	}
+
+	.headline-text-l, .headline-text-r  {
+	    background: #fff;
+	    padding: 0px 12px;
+	}
+
+	.headline-text-l:before {
+	    border-top: 7px double #dfdfdf82;
+	    content: "";
+	    position: absolute;
+	    top: 34%;
+	    right: 78%;
+	    width: 18%;
+	    z-index: -1;
+	}
+
+	.headline-text-r:after {
+	    border-top: 7px double #dfdfdf82;
+	    content: "";
+	    position: absolute;
+	    top: 34%;
+	    left: 78%;
+	    width: 18%;
+	    z-index: -1;
+	}
+
+	/*
+	   Riff Off of Infinity Code and Concept from Ana Tudor and Andrew Kirp, Respectively.
+	   I Fixed a Bug that Caused Incorrect Rendering on Chrome Android
+	*/
+	.infinity {
+	    display: inline-block;
+	    transform: rotate(16deg);
+	    font-size: 0.44em;
+	    vertical-align: middle;
+	    position: relative;
+	    transform-style: preserve-3d;
+	    -webkit-transform-style: preserve-3d;
+	}
+
+	.infinity:before, .infinity:after {
+	  display:inline-block;
+	  margin: 0 -0.2375em;
+	  width: 2em;
+	  height: 2em;
+	  border-radius: 50%;
+	  /*box-shadow: inset 0 -.375em rgba(#fff, .25); */
+	  transform: translate(var(--x, 0.4px), var(--y, -1px)) rotatex(1deg) rotate(90deg);
+	  background: radial-gradient(#fff 0.525em, transparent calc(0.525em - 1px)), conic-gradient(#34efef, #34efa9, #34ef63, #4bef34, #91ef34, #d7ef34, #efc034, #ef7a34, #ef3434);
+	  /* -webkit-mask: $m; */
+	  /* Firefox also supports WebKit-prefixed one, but whatever */
+	  /* mask: $m; */
+	  content: '';
+	}
+	.infinity:after {
+	  transform: rotatex(-1deg) rotate(-90deg);
+	  /*&box-shadow: inset -.375em 0 rgba(#fff, .25);*/
+	  background: radial-gradient(#fff 0.525em, transparent calc(0.525em - 1px)), conic-gradient(#34efef, #34a9ef, #3463ef, #4b34ef, #9134ef, #d734ef, #ef34c0, #ef347a, #ef3434);
+	}
+	.infinity-wrapper {
+	    background: #fff;
+            padding: 0 24px;
+    	    vertical-align: middle;
+	}
+	/* .star-effect {
     		color: rgba(0, 0, 0, 0.20);
     		font-size: 66px;
     		display: inline-block;
@@ -28,8 +100,8 @@
 	.img-star-effect {
 		width: 40px;
     		margin-top: -14px;
-	}
-	@keyframes spin {
+	}*/
+	/* @keyframes spin {
 	    from {
 		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg)
@@ -39,17 +111,6 @@
 		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg)
 	    }
-	}
-	/*.star-effect:before {
-		content: "\2726";
-    		position: absolute;
-		-webkit-transform:rotate(45deg);
-      		-ms-transform:rotate(45deg);
-    		transform: rotate(45deg);
-   		color: #dfdfdf;
-		background-color:#fff;
-    		z-index: -1;
-		margin-left:1px;
 	}*/
 	.section-full-width-wrapper {
 		background-color:#f8f8f8;
@@ -94,15 +155,15 @@
 	h1,h2,h3,h4 {
 		font-weight: bold;
 	}
-	h1 {	
+	/* h1 {	
 		position:relative;
     		padding-top: 0px;
     		padding-bottom: 20px;
     		text-align: center;
 		font-size: 54px;
-	}
+	}*/
 	h1.headline:before {
-	    border-top: 7px double #dfdfdf;
+	    border-top: 7px double #dfdfdf82;
 	    content: "";
 	    margin: 0 auto;
 	    position: absolute;
@@ -240,7 +301,37 @@
     		text-align: center;
 		margin-top: 32px;
 	}
-	@media (max-width: 600px) {
+	/* @media (min-width: 769px) and (max-width: 1440px) {
+		h1 {
+			text-align:center;
+			margin-left: 24px;
+    			margin-right: 24px;
+			font-size:42px;
+		}
+		h1.headline:before {
+			border:none;
+			position:initial;
+			width:auto;
+			z-index:auto;
+		}
+		.headline-text-l, .headline-text-r {
+			display: block;
+			padding: 10px 0px 20px;
+		}
+		.headline-text-l:before, .headline-text-r:after {
+			content:initial;
+		}
+		.headline-text-r {
+			display: block;
+			font-weight:normal;
+			font-size:36px;
+		}
+		.main-carousel {
+			width: 100%;
+			height: 290px;
+		}
+	}*/
+	@media (max-width: 768px) {
 		section {
 			width:100%;
 		}
@@ -267,24 +358,29 @@
 		}
 		.headline-text-l, .headline-text-r {
 			display: block;
-			padding:initial;
+			padding: 10px 0px 20px;
+		}
+		.headline-text-l:before, .headline-text-r:after {
+			content:initial;
 		}
 		.headline-text-r {
 			display: block;
 			font-weight:normal;
 			font-size:36px;
-			margin-top:4px;
 		}
-		.star-effect {
+		.infinity {
+			font-size:0.7em;
+		}
+		/*.star-effect {
 			display:block;
-		}
+		}*/
 		/*.star-effect:before {
 			margin-left: -2px;
     			margin-top: -2px;
 		}*/
-		.img-star-effect {
+		/*.img-star-effect {
 			width: 60px !important;
-		}
+		}*/
 		.main-carousel {
 			width: 100%;
 			height: 290px;
@@ -338,7 +434,7 @@
 </head>
 <body>
 <div class="main-wrapper">
-	<h1 class="headline" id="headline"><span class="headline-text-l">Robb Beal </span> <span class="star-effect"><img class="img-star-effect" src="star-effect.png" /></span><span class="headline-text-r"> Product Leader</span></h1>
+	<h1 id="headline"><span class="headline-text-l">Robb Beal </span> <!--<span class="star-effect"><img class="img-star-effect" src="star-effect.png" /></span>--> <span class="infinity"></span><span class="headline-text-r"> Product Leader</span></h1>
 <div class="main-carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "setGallerySize": false, "autoPlay": 4800 }'>
 	 <div class="carousel-cell">
     <img class="carousel-cell-image"
@@ -454,7 +550,7 @@
 <p class="natural">My contributions at these scales greatly influence how a product works versus how it looks. See my <a href="https://www.linkedin.com/pulse/how-works-digital-design-background-case-study-robb-beal" target="_blank">case study from my recent F500 e-commerce work</a> for a deeper dive.
 	</section>
 <section>
-<h2>Tell Me About How You Use Metrics/Analytics/Algo's</h2>
+<h2>Tell Me About How You Use Metrics, Analytics, and Algo's</h2>
 <img width="135" align="left" class="align-left" src="ga-ui-excerpt.png"> 
 <p class="natural">I'm a huge proponent of using <a href="https://en.wikipedia.org/wiki/OKR">OKRs</a> (Objectives and Key Results) for goal-setting and achievement.
 <p class="natural"> With a passion for stats and having immersed myself in Data Science and Machine Intelligence/Learning over the past few years, I'm very well-prepared to lead the creation of next-gen data+algorithms products.
@@ -527,8 +623,9 @@ For more depth, see my <a href="https://www.linkedin.com/pulse/expect-magic-prot
 													       </div>
 													       
 <p style="text-align:center;width:100%;"><a href="#headline">Back to Top</a>
-<h1 class="headline"><span class="star-effect"><span class="star-effect">&nbsp;<img class="img-star-effect" src="star-effect.png">&nbsp; </span></span></h1>
+<h1 class="headline"><!--<span class="star-effect"><span class="star-effect">&nbsp;<img class="img-star-effect" src="star-effect.png">&nbsp; </span></span>--><span class="infinity-wrapper"><span class="infinity"></span></span></h1>
 	</div>
+<script src='https://leaverou.github.io/conic-gradient/conic-gradient.js'></script>
 <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
