@@ -331,6 +331,23 @@
 			height: 290px;
 		}
 	}*/
+
+
+@media screen and (min-width: 800px) {
+   img.mobile {
+        display:none
+    }
+}
+
+img.non-mobile {
+    display: none
+}
+
+@media screen and (min-width: 800px) {
+    img.non-mobile {
+        display:block
+    }
+}
 	@media (max-width: 768px) {
 		section {
 			width:100%;
@@ -551,7 +568,8 @@
 	</section>
 <section>
 <h2>Tell Me About How You Use Metrics, Analytics, and Algo's</h2>
-<img width="135" align="left" class="align-left" src="ga-ui-excerpt.png"> 
+<img width="135" align="left" class="align-left mobile" src="ga-ui-excerpt-mobile.png">
+<img width="135" align="left" class="align-left non-mobile" src="ga-ui-excerpt.png"> 
 <p class="natural">I'm a huge proponent of using <a href="https://en.wikipedia.org/wiki/OKR">OKRs</a> (Objectives and Key Results) for goal-setting and achievement.
 <p class="natural"> With a passion for stats and having immersed myself in Data Science and Machine Intelligence/Learning over the past few years, I'm very well-prepared to lead the creation of next-gen data+algorithms products.
 <p class="natural">For more depth, I've <a href="beal-data.html" title="Robb's Data/Analytics Background" target="_blank"> detailed my considerable expertise in a separate page</a>.
