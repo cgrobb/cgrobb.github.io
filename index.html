@@ -333,7 +333,7 @@
 	}*/
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
    img.mobile {
         display:none
     }
@@ -343,7 +343,7 @@ img.non-mobile {
     display: none
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
     img.non-mobile {
         display:block
     }
@@ -446,6 +446,12 @@ img.non-mobile {
 		section.full-width.special {
     			margin: auto;
 		}
+	}
+	/* Adjust Main Carousel Height for Mobile Smartphones in Landscaoe */
+	@media (min-width:415px and max-width: 768px) {
+	       .main-carousel {
+			height: 340px;
+	       }	
 	}
 </style>
 </head>
